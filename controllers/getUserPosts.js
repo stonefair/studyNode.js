@@ -36,7 +36,7 @@ const userPosts = [
           "body": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
         }]
 
-
+// тут переробив на асинхронну функцію, відповідно з index.js забрав функцію errorHandler
 module.exports = async (request, response, next) => {
   try{
 const {params, originalUrl} = request

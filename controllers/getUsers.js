@@ -75,7 +75,7 @@ const users = [
 
 
 
-
+// тут переробив на асинхронну функцію, відповідно з index.js забрав функцію errorHandler
 module.exports = async (request, response, next) => {
 try {
 const {params} = request;
