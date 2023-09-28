@@ -37,6 +37,7 @@ const userPosts = [
         }]
 
 // тут переробив на асинхронну функцію, відповідно з index.js забрав функцію errorHandler
+
 module.exports = async (request, response, next) => {
   try{
 const {params, originalUrl} = request
@@ -67,4 +68,6 @@ console.log(originalUrl)
     response.status(500).send('Deniel, something gone wrong in posts')
   }
 }
+
+// **
 
